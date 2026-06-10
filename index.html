@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quieres tener una cita conmigo hoy?</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Quieres salir conmigo hoy?</title>
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
-  <div class="floating floating-1" aria-hidden="true">💖</div>
+  <div class="floating floating-1" aria-hidden="true">🐥</div>
   <div class="floating floating-2" aria-hidden="true">✨</div>
-  <div class="floating floating-3" aria-hidden="true">🌹</div>
-  <div class="floating floating-4" aria-hidden="true">😍</div>
+  <div class="floating floating-3" aria-hidden="true">🥚</div>
+  <div class="floating floating-4" aria-hidden="true">🌼</div>
 
   <main class="page">
     <section class="card" aria-labelledby="question-title">
-      <div class="hero-emoji" aria-hidden="true">🥰💌🌷</div>
-      <p class="eyebrow">Pregunta importante</p>
-      <h1 id="question-title">Quieres tener una cita conmigo hoy?</h1>
-      <p class="subtitle">Solo puedes escoger una opcion... si logras atraparla.</p>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="sun-glow"></div>
+        <div class="chick">
+          <div class="chick-face">
+            <span class="eye eye-left"></span>
+            <span class="eye eye-right"></span>
+            <span class="beak"></span>
+          </div>
+          <div class="shell shell-top"></div>
+          <div class="shell shell-bottom"></div>
+        </div>
+      </div>
+
+      <p class="eyebrow">Pregunta!!</p>
+      <h1 id="question-title">Queres salir conmigo hoy?</h1>
+      <p class="subtitle">Solo puedes escoger una opcion...</p>
 
       <div class="button-area" id="button-area">
         <button class="answer answer-yes" id="yes-button" type="button">Si</button>
@@ -28,6 +40,17 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <div class="modal-backdrop hidden" id="yes-modal" aria-hidden="true">
+    <section class="modal" aria-labelledby="yes-modal-title" aria-modal="true" role="dialog">
+      <div class="modal-emoji" aria-hidden="true">🐥💛✨</div>
+      <h2 id="yes-modal-title">Sabido era</h2>
+      <p class="modal-text" id="yes-modal-text">clarito siempre esta...</p>
+      <div class="modal-actions">
+        <button class="modal-button modal-button-primary" id="yes-modal-continue" type="button">Continuar</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js?v=4"></script>
 </body>
 </html>

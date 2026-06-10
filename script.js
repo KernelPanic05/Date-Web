@@ -2,6 +2,8 @@ const buttonArea = document.getElementById("button-area");
 const noButton = document.getElementById("no-button");
 const yesButton = document.getElementById("yes-button");
 const message = document.getElementById("message");
+const yesModal = document.getElementById("yes-modal");
+const yesModalContinue = document.getElementById("yes-modal-continue");
 
 function moveNoButton() {
   const areaRect = buttonArea.getBoundingClientRect();
@@ -21,8 +23,13 @@ noButton.addEventListener("mouseenter", moveNoButton);
 noButton.addEventListener("click", moveNoButton);
 
 yesButton.addEventListener("click", () => {
-  message.textContent = "Sabia que dirias que si. Preparando la siguiente pregunta...";
-  window.setTimeout(() => {
-    window.location.href = "menu.html";
-  }, 900);
+  message.textContent = "";
+  yesModal.classList.remove("hidden");
+  yesModal.setAttribute("aria-hidden", "false");
+});
+
+yesModalContinue.addEventListener("click", () => {
+  yesModal.classList.add("hidden");
+  yesModal.setAttribute("aria-hidden", "true");
+  window.location.href = "menu.html";
 });

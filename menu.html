@@ -3,32 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elige un plan rico</title>
-  <link rel="stylesheet" href="menu.css">
+  <title>Ruleta de la indecisión</title>
+  <link rel="stylesheet" href="menu.css?v=3">
 </head>
 <body>
-  <div class="floating floating-1" aria-hidden="true">🍓</div>
-  <div class="floating floating-2" aria-hidden="true">🍕</div>
-  <div class="floating floating-3" aria-hidden="true">🍩</div>
+  <div class="floating floating-1" aria-hidden="true">🍦</div>
+  <div class="floating floating-2" aria-hidden="true">🐥</div>
+  <div class="floating floating-3" aria-hidden="true">🍣</div>
   <div class="floating floating-4" aria-hidden="true">☕</div>
 
   <main class="page">
     <section class="panel" aria-labelledby="menu-title">
-      <div class="hero-emoji" aria-hidden="true">🍰🍟🍫</div>
-      <p class="eyebrow">Muy bien, siguiente decision</p>
-      <h1 id="menu-title">Que se te antoja para nuestra cita?</h1>
-      <p class="subtitle">Escoge una opcion y vemos por donde empezamos. 😋</p>
+      <div class="hero-emoji" aria-hidden="true">🐥🎡🍔🍜</div>
+      <p class="eyebrow">Ahora al azar</p>
+      <h1 id="menu-title">Gire la ruleta pofabo</h1>
+      <p class="subtitle">y veamos que toca</p>
 
-      <div class="options" role="list">
-        <button class="option option-salty" type="button" data-choice="Salado">Salado 🍕</button>
-        <button class="option option-sweet" type="button" data-choice="Dulce">Dulce 🍰</button>
-        <button class="option option-both" type="button" data-choice="Ambos">Ambos 😍</button>
+      <div class="roulette-layout">
+        <div class="wheel-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="wheel" id="wheel">
+            <div class="wheel-label" style="--i: 0;">🍦 Helado</div>
+            <div class="wheel-label" style="--i: 1;">🍔 Hamburguesa</div>
+            <div class="wheel-label" style="--i: 2;">🍕 Pizza</div>
+            <div class="wheel-label" style="--i: 3;">🍗 Pollo</div>
+            <div class="wheel-label" style="--i: 4;">🦑 Jibas</div>
+            <div class="wheel-label" style="--i: 5;">🥤 Frapus</div>
+            <div class="wheel-label" style="--i: 6;">☕ Cafecito</div>
+            <div class="wheel-label" style="--i: 7;">🫐 Acai</div>
+            <div class="wheel-label" style="--i: 8;">🍣 Sushi</div>
+            <div class="wheel-label" style="--i: 9;">🍜 Ramen</div>
+            <div class="wheel-center">Gira enaki</div>
+          </div>
+        </div>
       </div>
 
-      <p class="result" id="result" aria-live="polite"></p>
+      <button class="spin-button" id="spin-button" type="button">Girar ruleta</button>
+      <p class="result" id="result" aria-live="polite">Puede salir helado, pizza, sushi...o unos pikos yieeee ✨</p>
     </section>
   </main>
 
-  <script src="menu.js"></script>
+  <div class="modal-backdrop hidden" id="result-modal" aria-hidden="true">
+    <section class="modal" aria-labelledby="modal-title" aria-modal="true" role="dialog">
+      <div class="modal-emoji" aria-hidden="true">🎉🍽️💖</div>
+      <h2 id="modal-title">YEEEIIIII</h2>
+      <p class="modal-text" id="modal-text"></p>
+      <div class="modal-actions">
+        <button class="modal-button modal-button-primary" id="modal-close" type="button">Aceptar</button>
+        <button class="modal-button modal-button-secondary" id="modal-spin-again" type="button">Girar otra vez</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="menu.js?v=3"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ Simple static web page with:
 - A first screen asking `Quieres tener una cita conmigo hoy?`
 - A `Si` button
 - A `No` button that moves when the cursor gets close
-- A second screen with food choices: `Salado`, `Dulce`, `Ambos`
+- A second screen with a roulette for: `Helado`, `Hamburguesa`, `Pizza`, `Pollo`, `Jibas`, `Frapus`, `Cafecito`, `Acai`, `Sushi`, `Ramen`
 - Extra emojis and CSS animations
 
 ## Files
