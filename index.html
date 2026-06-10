@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quieres tener una cita conmigo hoy?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="floating floating-1" aria-hidden="true">💖</div>
+  <div class="floating floating-2" aria-hidden="true">✨</div>
+  <div class="floating floating-3" aria-hidden="true">🌹</div>
+  <div class="floating floating-4" aria-hidden="true">😍</div>
+
+  <main class="page">
+    <section class="card" aria-labelledby="question-title">
+      <div class="hero-emoji" aria-hidden="true">🥰💌🌷</div>
+      <p class="eyebrow">Pregunta importante</p>
+      <h1 id="question-title">Quieres tener una cita conmigo hoy?</h1>
+      <p class="subtitle">Solo puedes escoger una opcion... si logras atraparla.</p>
+
+      <div class="button-area" id="button-area">
+        <button class="answer answer-yes" id="yes-button" type="button">Si</button>
+        <button class="answer answer-no" id="no-button" type="button">No</button>
+      </div>
+
+      <p class="message" id="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

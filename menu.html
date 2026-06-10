@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elige un plan rico</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div class="floating floating-1" aria-hidden="true">🍓</div>
+  <div class="floating floating-2" aria-hidden="true">🍕</div>
+  <div class="floating floating-3" aria-hidden="true">🍩</div>
+  <div class="floating floating-4" aria-hidden="true">☕</div>
+
+  <main class="page">
+    <section class="panel" aria-labelledby="menu-title">
+      <div class="hero-emoji" aria-hidden="true">🍰🍟🍫</div>
+      <p class="eyebrow">Muy bien, siguiente decision</p>
+      <h1 id="menu-title">Que se te antoja para nuestra cita?</h1>
+      <p class="subtitle">Escoge una opcion y vemos por donde empezamos. 😋</p>
+
+      <div class="options" role="list">
+        <button class="option option-salty" type="button" data-choice="Salado">Salado 🍕</button>
+        <button class="option option-sweet" type="button" data-choice="Dulce">Dulce 🍰</button>
+        <button class="option option-both" type="button" data-choice="Ambos">Ambos 😍</button>
+      </div>
+
+      <p class="result" id="result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="menu.js"></script>
+</body>
+</html>
